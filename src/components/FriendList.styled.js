@@ -8,6 +8,7 @@ export const FriendListed = styled.ul`
   flex-direction: column;
   gap: 5px;
   align-items: start;
+  margin-bottom: 50px;
 `;
 
 export const FriendItem = styled.li`
@@ -30,7 +31,7 @@ export const FriendStatus = styled.span`
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: ${props => (props.status ? '#50C878' : 'red')};
+    background-color: ${props => (props.$status === 'true' ? 'green' : 'red')};
     margin-right: 5px;
   }
 `;

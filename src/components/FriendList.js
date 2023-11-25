@@ -26,7 +26,7 @@ export const FriendList = ({ friends }) => {
 const Friend = ({ avatar, name, isOnline, id }) => {
   return (
     <FriendItem key={id}>
-      <FriendStatus status={isOnline}></FriendStatus>
+      <FriendStatus status={isOnline.toString()}></FriendStatus>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <FriendText>{name}</FriendText>
     </FriendItem>
