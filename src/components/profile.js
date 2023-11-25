@@ -8,6 +8,7 @@ import {
   UserDescrItem,
   Label,
   UserTag,
+  UserImg,
 } from './Profile.styled';
 import { GlobalSlyled } from './GlobalStyle';
 
@@ -23,7 +24,7 @@ export const Profile = ({
       <UserCard>
         <div className="profile">
           <UserDescr>
-            <img src={avatar} alt="User avatar" className="avatar" />
+            <UserImg src={avatar} alt="User avatar" className="avatar" />
             <UserName>{username}</UserName>
             <UserTag>{tag}</UserTag>
             <UserDescrItem>{location}</UserDescrItem>

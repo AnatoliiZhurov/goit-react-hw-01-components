@@ -50,3 +50,7 @@ export const UserTag = styled.p`
   text-align: center;
   margin-bottom: 10px;
 `;
+
+export const UserImg = styled.img`
+  width: 100%;
+`;

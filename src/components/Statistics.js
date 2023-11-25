@@ -4,6 +4,7 @@ export const StatBox = styled.section`
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 `;
 
 export const StatData = styled.ul`
