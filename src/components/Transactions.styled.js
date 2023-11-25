@@ -36,4 +36,7 @@ export const BodyRow = styled.tr`
 export const BodyCol = styled.td`
   padding-left: 10%;
   border: 1px solid #004976;
+  &:first-child {
+    text-transform: capitalize;
+  }
 `;
