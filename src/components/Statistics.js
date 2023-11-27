@@ -54,10 +54,11 @@ function DataItem({ label, percentage }) {
     </SetItem>
   );
 }
-export const Statistics = ({ data }) => {
+
+export const Statistics = ({ title, data }) => {
   return (
     <StatBox>
-      <Upload>Upload stats</Upload>
+      {title && <Upload>{title}</Upload>}
 
       <StatData>
         {data.map(({ id, label, percentage }) => {
